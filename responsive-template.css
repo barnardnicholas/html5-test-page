@@ -2,14 +2,14 @@ html,
 body {
   font-family: Helvetica, Arial, sans-serif;
   font-size: 16px;
-  font-size: clamp(20px, 2vmin, 32px);
-  font-weight: 400;
+  font-size: clamp(16px, 2vmin, 32px);
+  font-weight: 200;
 }
 /* - - - - - - - - - - Typography - - - - - - - - - - */
 /* - - - - - - - - - - Headings - - - - - - - - - - */
 h1 {
   font-size: 3rem;
-  line-height: 2rem;
+  line-height: 3rem;
   font-weight: 600;
 }
 h2 {
@@ -40,7 +40,6 @@ h6 {
 /* - - - - - - - - - - Body Text - - - - - - - - - - */
 p {
   font-size: 1rem;
-  font-weight: 400;
 }
 blockquote,
 blockquote p {
@@ -265,26 +264,52 @@ Original article: https://www.freecodecamp.org/news/the-100-correct-way-to-do-cs
 /* Portrait Phones upwards
 /*-------------------------------------------------- */
 @media (max-width: 599px) {
+  html,
+  body {
+    font-size: 16px;
+  }
 }
 
 /* Portrait Tablets upwards
 /*-------------------------------------------------- */
 @media (min-width: 600px) {
+  html,
+  body {
+    font-size: 16px;
+  }
 }
 
 /* Landscape Tablets upwards
 /*-------------------------------------------------- */
 @media (min-width: 900px) {
+  html,
+  body {
+    font-size: 18px;
+  }
 }
 
 /* Desktop upwards
 /*-------------------------------------------------- */
 @media (min-width: 1200px) {
+  html,
+  body {
+    font-size: 18px;
+  }
 }
 
 /* Large Desktop upwards
 /*-------------------------------------------------- */
 @media (min-width: 1800px) {
+  html,
+  body {
+    font-size: 20px;
+  }
 }
 
 /* - - - - - - - - - - Super-Responsiveness - vMin/vMax - - - - - - - - - - */
+/* @supports (font-size: 5vmin) {
+  html,
+  body {
+    font-size: clamp(16px, 2vmin, 32px) !important;
+  }
+} */
