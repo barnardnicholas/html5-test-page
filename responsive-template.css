@@ -1,6 +1,37 @@
+@font-face {
+  font-family: "Open Sans Light";
+  src: url("OpenSans-Light.ttf"); /* IE9 Compat Modes */
+  src: url("OpenSans-Light.ttf?#iefix") format("embedded-opentype"),
+    /* IE6-IE8 */ url("OpenSans-Light.ttf") format("truetype"); /* Safari, Android, iOS */
+}
+@font-face {
+  font-family: "Open Sans SemiBold";
+  src: url("OpenSans-SemiBold.ttf"); /* IE9 Compat Modes */
+  src: url("OpenSans-SemiBold.ttf?#iefix") format("embedded-opentype"),
+    /* IE6-IE8 */ url("OpenSans-SemiBold.ttf") format("truetype"); /* Safari, Android, iOS */
+}
+@font-face {
+  font-family: "PlayFair Display SC Regular";
+  src: url("PlayfairDisplaySC-Regular.ttf"); /* IE9 Compat Modes */
+  src: url("PlayfairDisplaySC-Regular.ttf?#iefix") format("embedded-opentype"),
+    /* IE6-IE8 */ url("PlayfairDisplaySC-Regular.ttf") format("truetype"); /* Safari, Android, iOS */
+}
+@font-face {
+  font-family: "PlayFair Display SC Black";
+  src: url("PlayfairDisplaySC-Black.ttf"); /* IE9 Compat Modes */
+  src: url("PlayfairDisplaySC-Black.ttf?#iefix") format("embedded-opentype"),
+    /* IE6-IE8 */ url("PlayfairDisplaySC-Black.ttf") format("truetype"); /* Safari, Android, iOS */
+}
+
+/* - - - - - - - - - - Font smoothing - - - - - - - - - - */
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 html,
 body {
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: "Open Sans Light", Arial, sans-serif;
   font-size: 16px;
   font-size: clamp(16px, 2vmin, 32px);
   font-weight: 200;
@@ -8,31 +39,37 @@ body {
 /* - - - - - - - - - - Typography - - - - - - - - - - */
 /* - - - - - - - - - - Headings - - - - - - - - - - */
 h1 {
+  font-family: "PlayFair Display SC Black";
   font-size: 3rem;
   line-height: 3rem;
   font-weight: 600;
 }
 h2 {
+  font-family: "PlayFair Display SC Black";
   font-size: 2.5rem;
   line-height: 2rem;
   font-weight: 600;
 }
 h3 {
+  font-family: "PlayFair Display SC Regular";
   font-size: 2rem;
   line-height: 1.5rem;
   font-weight: 500;
 }
 h4 {
+  font-family: "PlayFair Display SC Regular";
   font-size: 1.5rem;
   line-height: 1.5rem;
   font-weight: 500;
 }
 h5 {
+  font-family: "Open Sans SemiBold";
   font-size: 1.2rem;
   line-height: 1rem;
   font-weight: 500;
 }
 h6 {
+  font-family: "Open Sans SemiBold";
   font-size: 1rem;
   line-height: 1rem;
   font-weight: 600;
@@ -153,6 +190,7 @@ time {
 
 /* - - - - - - - - - - Images, Audio, Video - - - - - - - - - - */
 img {
+  max-width: 100vw;
 }
 figure {
 }
@@ -266,7 +304,7 @@ Original article: https://www.freecodecamp.org/news/the-100-correct-way-to-do-cs
 @media (max-width: 599px) {
   html,
   body {
-    font-size: 16px;
+    font-size: 14px;
   }
 }
 
@@ -307,9 +345,9 @@ Original article: https://www.freecodecamp.org/news/the-100-correct-way-to-do-cs
 }
 
 /* - - - - - - - - - - Super-Responsiveness - vMin/vMax - - - - - - - - - - */
-/* @supports (font-size: 5vmin) {
+@supports (font-size: 5vmin) {
   html,
   body {
-    font-size: clamp(16px, 2vmin, 32px) !important;
+    font-size: clamp(16px, 1.5vmin, 32px) !important;
   }
-} */
+}
