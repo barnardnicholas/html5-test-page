@@ -149,6 +149,12 @@ code {
 pre {
 }
 /* - - - - - - - - - - Inline elements - - - - - - - - - - */
+a {
+} /* Link */
+a:visited {
+} /* Link Visited */
+a:focus {
+} /* Link Focused */
 strong {
 } /* Strong */
 em {
@@ -345,9 +351,9 @@ Original article: https://www.freecodecamp.org/news/the-100-correct-way-to-do-cs
 }
 
 /* - - - - - - - - - - Super-Responsiveness - vMin/vMax - - - - - - - - - - */
-/* @supports (font-size: 5vmin) {
+@supports (font-size: clamp(16px, 2vmin, 32px)) {
   html,
   body {
     font-size: clamp(16px, 2vmin, 32px) !important;
   }
-} */
+}
